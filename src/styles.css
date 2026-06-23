@@ -1,0 +1,542 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  --color-brand: var(--brand);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-soft: var(--brand-soft);
+  --color-leaf: var(--leaf);
+  --color-charcoal: var(--charcoal);
+  --color-cream: var(--cream);
+  --color-sage: var(--sage);
+
+  --shadow-soft: 0 10px 40px -12px color-mix(in oklab, var(--brand-deep) 25%, transparent);
+  --shadow-ring: 0 0 0 6px color-mix(in oklab, var(--brand) 12%, transparent);
+}
+
+:root {
+  --radius: 1.75rem;
+
+  /* Clean white background, near-black text */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.28 0.02 165);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.012 165);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.012 165);
+
+  /* Brand greens — matched to #4caf2f / #2d7d1f / #111917 */
+  --brand: oklch(0.68 0.19 138);          /* #4caf2f vivid green */
+  --brand-deep: oklch(0.52 0.16 142);     /* #2d7d1f deep green */
+  --brand-soft: oklch(0.96 0.018 150);    /* #eef7f1 soft tint */
+  --leaf: oklch(0.72 0.20 138);
+  --charcoal: oklch(0.18 0.012 165);      /* #111917 near-black */
+  --cream: oklch(0.99 0.005 145);
+  --sage: oklch(0.97 0.012 145);          /* #f3f8f4 */
+
+  --primary: var(--brand);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.96 0.018 150);
+  --secondary-foreground: oklch(0.18 0.012 165);
+  --muted: oklch(0.97 0.012 145);
+  --muted-foreground: oklch(0.48 0.02 160);
+  --accent: var(--brand);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.91 0.014 150);
+  --input: oklch(0.91 0.014 150);
+  --ring: var(--brand);
+}
+
+
+.dark {
+  --background: oklch(0.18 0.012 200);
+  --foreground: oklch(0.97 0.008 145);
+  --card: oklch(0.22 0.015 200);
+  --card-foreground: oklch(0.97 0.008 145);
+  --popover: oklch(0.22 0.015 200);
+  --popover-foreground: oklch(0.97 0.008 145);
+  --primary: var(--leaf);
+  --primary-foreground: oklch(0.15 0.01 160);
+  --secondary: oklch(0.28 0.02 200);
+  --secondary-foreground: oklch(0.97 0.008 145);
+  --muted: oklch(0.28 0.02 200);
+  --muted-foreground: oklch(0.72 0.02 145);
+  --accent: var(--brand);
+  --accent-foreground: oklch(0.99 0.005 145);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: var(--leaf);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.045em;
+    font-weight: 900;
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+
+  /* ──────────────── Bangla typography ──────────────── */
+  html[lang="bn"] body {
+    font-family: "Hind Siliguri", "Noto Sans Bengali", "Inter", system-ui, sans-serif;
+    font-feature-settings: normal;
+    line-height: 1.7;
+  }
+  html[lang="bn"] h1,
+  html[lang="bn"] h2,
+  html[lang="bn"] h3,
+  html[lang="bn"] h4 {
+    font-family: "Hind Siliguri", "Noto Sans Bengali", "Inter", system-ui, sans-serif;
+    letter-spacing: -0.005em;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  /* Buttons & pills with uppercase tracking look wrong in Bangla — relax it */
+  html[lang="bn"] .uppercase {
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  /* Premium focus ring (a11y) — never harsh, always brand-aligned */
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  /* Disable default ring on mouse click — only show on keyboard */
+  :focus:not(:focus-visible) { outline: none; }
+
+  /* Branded text selection */
+  ::selection {
+    background-color: color-mix(in oklab, var(--brand) 28%, transparent);
+    color: var(--charcoal);
+  }
+
+  /* Custom premium scrollbar (desktop only) */
+  @media (pointer: fine) {
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb {
+      background: color-mix(in oklab, var(--brand-deep) 35%, transparent);
+      border-radius: 999px;
+      border: 2px solid var(--color-background);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: color-mix(in oklab, var(--brand-deep) 55%, transparent);
+    }
+  }
+
+  /* Respect user motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Image defaults — prevent layout shift */
+  img { max-width: 100%; height: auto; }
+
+}
+
+@layer utilities {
+  /* Signature premium card box — matches Home services card look.
+     Apply to any card container that should feel "boxed" and lift on hover. */
+  .card-premium {
+    position: relative;
+    border-radius: 28px;
+    border: 1px solid color-mix(in oklab, var(--border) 60%, transparent);
+    background: color-mix(in oklab, var(--cream) 55%, white);
+    box-shadow: 0 18px 45px -28px rgba(17, 25, 23, 0.18);
+    transition:
+      transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.5s ease,
+      border-color 0.5s ease,
+      background 0.5s ease;
+  }
+  .card-premium:hover {
+    transform: translateY(-6px);
+    border-color: color-mix(in oklab, var(--brand) 40%, transparent);
+    box-shadow: 0 30px 60px -25px color-mix(in oklab, var(--brand) 30%, transparent);
+  }
+  /* Dark-surface variant for cards on dark hero/feature sections */
+  .card-premium-dark {
+    position: relative;
+    border-radius: 28px;
+    border: 1px solid color-mix(in oklab, white 10%, transparent);
+    background: color-mix(in oklab, white 4%, transparent);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 18px 45px -28px rgba(0, 0, 0, 0.5);
+    transition:
+      transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.5s ease,
+      border-color 0.5s ease,
+      background 0.5s ease;
+  }
+  .card-premium-dark:hover {
+    transform: translateY(-6px);
+    border-color: color-mix(in oklab, var(--brand) 40%, transparent);
+    background: color-mix(in oklab, white 6%, transparent);
+    box-shadow: 0 30px 60px -25px color-mix(in oklab, var(--brand) 35%, transparent);
+  }
+
+  .bg-grain {
+    background-image:
+      radial-gradient(circle at 1px 1px, color-mix(in oklab, var(--brand) 14%, transparent) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+  .bg-diagonal-stripes {
+    background-image: repeating-linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 38px,
+      color-mix(in oklab, var(--brand) 22%, transparent) 38px,
+      color-mix(in oklab, var(--brand) 22%, transparent) 40px
+    );
+  }
+  .ring-brand-soft {
+    box-shadow: 0 0 0 10px color-mix(in oklab, var(--brand) 10%, transparent);
+  }
+  .shadow-pill {
+    box-shadow: 0 22px 70px rgba(17, 25, 23, 0.16);
+  }
+  /* Premium elevation tokens */
+  .shadow-elegant {
+    box-shadow:
+      0 1px 2px rgba(17, 25, 23, 0.04),
+      0 8px 24px -8px color-mix(in oklab, var(--brand-deep) 18%, transparent);
+  }
+  .shadow-card {
+    box-shadow:
+      0 2px 4px rgba(17, 25, 23, 0.04),
+      0 12px 32px -12px color-mix(in oklab, var(--brand-deep) 22%, transparent);
+  }
+  .shadow-card-hover {
+    box-shadow:
+      0 4px 8px rgba(17, 25, 23, 0.06),
+      0 24px 48px -16px color-mix(in oklab, var(--brand-deep) 32%, transparent);
+  }
+  /* Subtle premium gradient backdrop */
+  .bg-brand-mesh {
+    background-image:
+      radial-gradient(ellipse 80% 60% at 20% 0%, color-mix(in oklab, var(--brand) 8%, transparent), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 90% 100%, color-mix(in oklab, var(--brand-deep) 10%, transparent), transparent 60%);
+  }
+  /* Animation utilities */
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+  @keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  /* Smooth hover lift */
+  .hover-lift {
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px);
+  }
+
+  /* ─── Premium polish layer ─────────────────────────────────────── */
+
+  /* Animated ambient blobs (hero + sections) */
+  .animate-blob {
+    animation: blob-float 14s ease-in-out infinite;
+    will-change: transform;
+  }
+  .animate-blob-delayed {
+    animation: blob-float 16s ease-in-out -7s infinite;
+    will-change: transform;
+  }
+  @keyframes blob-float {
+    0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+    33%      { transform: translate3d(40px, -30px, 0) scale(1.08); }
+    66%      { transform: translate3d(-30px, 25px, 0) scale(0.94); }
+  }
+
+  /* Slow gradient sweep for accent text */
+  .text-gradient-brand {
+    background-image: linear-gradient(90deg, var(--brand-deep), var(--brand), var(--leaf), var(--brand));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-pan 8s ease-in-out infinite;
+  }
+  @keyframes gradient-pan {
+    0%, 100% { background-position: 0% 50%; }
+    50%      { background-position: 100% 50%; }
+  }
+
+  /* Image hover zoom — wrap container with .media-zoom */
+  .media-zoom { overflow: hidden; }
+  .media-zoom img,
+  .media-zoom video {
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1), filter 0.5s ease;
+  }
+  .media-zoom:hover img,
+  .media-zoom:hover video {
+    transform: scale(1.05);
+    filter: saturate(1.08);
+  }
+
+  /* Button shine sweep */
+  .btn-shine { position: relative; overflow: hidden; isolation: isolate; }
+  .btn-shine::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 30%, color-mix(in oklab, white 35%, transparent) 50%, transparent 70%);
+    transform: translateX(-120%);
+    transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+    z-index: 1;
+  }
+  .btn-shine:hover::after { transform: translateX(120%); }
+
+  /* Premium form field focus glow */
+  .form-glow input,
+  .form-glow textarea,
+  .form-glow select {
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  }
+  .form-glow input:focus,
+  .form-glow textarea:focus,
+  .form-glow select:focus {
+    outline: none;
+    border-color: var(--brand);
+    box-shadow: 0 0 0 4px color-mix(in oklab, var(--brand) 15%, transparent);
+  }
+
+  /* Page enter (auto-applied to <main>) */
+  main { animation: page-enter 0.55s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  @keyframes page-enter {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  /* Live pulse rings (for Play / CTA buttons) */
+  .live-rings { position: relative; }
+  .live-rings::before,
+  .live-rings::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    border: 2px solid color-mix(in oklab, var(--brand) 70%, white);
+    opacity: 0;
+    pointer-events: none;
+    animation: live-ring 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  }
+  .live-rings::after { animation-delay: 1.2s; }
+  @keyframes live-ring {
+    0%   { transform: scale(1);   opacity: 0.55; }
+    80%  { transform: scale(1.7); opacity: 0; }
+    100% { transform: scale(1.7); opacity: 0; }
+  }
+
+  /* Gentle vertical float (hero image, badges) */
+  .float-y { animation: float-y 6s ease-in-out infinite; will-change: transform; }
+  .float-y-slow { animation: float-y 9s ease-in-out infinite; will-change: transform; }
+  @keyframes float-y {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-10px); }
+  }
+
+  /* Breathing scale — for play icons or status dots */
+  .breathing { animation: breathing 2.4s ease-in-out infinite; }
+  @keyframes breathing {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(1.08); }
+  }
+
+  /* Card hover lift with soft glow */
+  .card-lift {
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.4s ease,
+                border-color 0.3s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 50px -18px color-mix(in oklab, var(--brand) 30%, transparent);
+  }
+
+
+  /* Soft underline reveal on links */
+  .link-reveal {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .link-reveal:hover { background-size: 100% 1px; }
+
+  /* Reserve space on mobile so sticky bottom CTA bar never overlaps content */
+  @media (max-width: 640px) {
+    body { padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+  }
+
+  /* ─── Custom cursor (desktop only) ─────────────────────────────── */
+  @media (pointer: fine) {
+    html.has-custom-cursor,
+    html.has-custom-cursor * {
+      cursor: none !important;
+    }
+    .cc-dot,
+    .cc-ring {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 9999;
+      mix-blend-mode: difference;
+      will-change: transform, width, height, opacity;
+    }
+    .cc-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #ffffff;
+      transition: width 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+                  height 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+                  opacity 0.2s ease;
+    }
+    .cc-ring {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      border: 1.5px solid #ffffff;
+      transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                  height 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                  border-color 0.25s ease,
+                  background 0.25s ease,
+                  opacity 0.2s ease;
+    }
+    /* Hover-expand on clickable targets */
+    .cc-ring.is-hovering {
+      width: 64px;
+      height: 64px;
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.9);
+    }
+    .cc-dot.is-hovering {
+      width: 4px;
+      height: 4px;
+    }
+    /* Click feedback */
+    .cc-ring.is-down {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+/* Animated neon border — rotating conic glow around a rounded card */
+@property --neon-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes neon-spin {
+  to { --neon-angle: 360deg; }
+}
+.neon-border {
+  position: relative;
+  isolation: isolate;
+}
+.neon-border::before,
+.neon-border::after {
+  content: "";
+  position: absolute;
+  inset: -1.5px;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(
+    from var(--neon-angle),
+    transparent 0deg,
+    oklch(0.78 0.22 150) 60deg,
+    oklch(0.92 0.25 145) 90deg,
+    oklch(0.78 0.22 150) 120deg,
+    transparent 180deg,
+    transparent 360deg
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  animation: neon-spin 4s linear infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+.neon-border::after {
+  inset: -3px;
+  padding: 3px;
+  filter: blur(8px);
+  opacity: 0.65;
+}
+@media (prefers-reduced-motion: reduce) {
+  .neon-border::before,
+  .neon-border::after { animation: none; }
+}
+
+
