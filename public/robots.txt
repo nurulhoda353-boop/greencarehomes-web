@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://greencarehomesbd.life/sitemap.xml
+Sitemap: https://greencarehomesbd.com/sitemap.xml

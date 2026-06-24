@@ -15,7 +15,7 @@
  */
 export const SITE_URL: string =
   (import.meta.env.VITE_SITE_URL as string | undefined)?.replace(/\/$/, "") ||
-  "https://greencarehomesbd.life";
+  "https://greencarehomesbd.com";
 
 /** Build an absolute URL for a given path (always single-slash joined). */
 export const absoluteUrl = (path: string = "/"): string =>

@@ -20,6 +20,7 @@ import { NotFound } from "@/components/site/NotFound";
 import { Toaster } from "@/components/ui/sonner";
 import { useLocale } from "@/i18n/locale";
 import { useEffect } from "react";
+import { SITE_URL } from "@/config/site";
 
 
 function NotFoundComponent() {
@@ -67,16 +68,35 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "theme-color", content: "#1f5d2f" },
-      { name: "description", content: "Compassionate home healthcare & assisted living for seniors and families across Bangladesh." },
+      { name: "description", content: "Compassionate home healthcare & assisted living for seniors and families across Bangladesh. 24/7 nursing, caregiver, physiotherapy & residential care — Greencare Homes." },
+      // Open Graph
       { property: "og:site_name", content: "Greencare Homes" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_BD" },
+      { property: "og:locale:alternate", content: "bn_BD" },
+      { property: "og:image", content: `${SITE_URL}/og-cover.jpg` },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      // Twitter Card
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: `${SITE_URL}/og-cover.jpg` },
+      // Page title
       { title: "Greencare Homes — Compassionate Home Healthcare in Bangladesh" },
       { property: "og:title", content: "Greencare Homes — Compassionate Home Healthcare in Bangladesh" },
       { name: "twitter:title", content: "Greencare Homes — Compassionate Home Healthcare in Bangladesh" },
       { property: "og:description", content: "Compassionate home healthcare & assisted living for seniors and families across Bangladesh." },
       { name: "twitter:description", content: "Compassionate home healthcare & assisted living for seniors and families across Bangladesh." },
+      // Geo SEO — Bangladesh targeting
+      { name: "geo.region", content: "BD-C" },
+      { name: "geo.placename", content: "Dhaka, Bangladesh" },
+      { name: "geo.position", content: "23.7537;90.3629" },
+      { name: "ICBM", content: "23.7537, 90.3629" },
+      // Robots
+      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
+      // Language / content
+      { httpEquiv: "content-language", content: "en, bn" },
+      // Author
+      { name: "author", content: "Greencare Homes" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
