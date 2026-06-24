@@ -9,8 +9,8 @@ export function OrganizationJsonLd() {
   const data = {
     "@context": "https://schema.org",
     "@type": "MedicalOrganization",
-    name: "Green Care Homes",
-    legalName: "Green Care Homes BD",
+    name: "Greencare Homes",
+    legalName: "Greencare Homes BD",
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
     image: `${SITE_URL}/og-image.jpg`,

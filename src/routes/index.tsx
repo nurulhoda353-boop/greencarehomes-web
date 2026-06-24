@@ -46,13 +46,13 @@ import { SITE_URL } from "@/config/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Green Care Homes — Compassionate Care for Seniors & Families" },
+      { title: "Greencare Homes — Compassionate Care for Seniors & Families" },
       {
         name: "description",
         content:
           "Professional home healthcare, nursing, physiotherapy, and assisted living services in Bangladesh. 24/7 compassionate care for seniors, patients, and families.",
       },
-      { property: "og:title", content: "Green Care Homes — Compassionate Care for Seniors & Families" },
+      { property: "og:title", content: "Greencare Homes — Compassionate Care for Seniors & Families" },
       { property: "og:description", content: "Dedicated healthcare support for better living. 24/7 compassionate care across Bangladesh." },
       { property: "og:url", content: `${SITE_URL}/` },
       { property: "og:image", content: `${SITE_URL}/og-cover.jpg` },
@@ -68,7 +68,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "MedicalBusiness",
-          name: "Green Care Homes",
+          name: "Greencare Homes",
           description:
             "Home healthcare, nursing, physiotherapy and assisted living services across Bangladesh.",
           url: SITE_URL,
@@ -621,7 +621,7 @@ function HomePage() {
             </h2>
 
             <p className="mt-6 text-[17px] leading-[1.75] text-foreground/75">
-              Green Care Homes is a dedicated home healthcare and assisted living provider
+              Greencare Homes is a dedicated home healthcare and assisted living provider
               committed to improving the quality of life for seniors, patients, and families
               across Bangladesh.
             </p>
@@ -802,7 +802,7 @@ function HomePage() {
               <div className="media-zoom relative overflow-hidden rounded-[28px] shadow-[0_50px_100px_-30px_rgba(20,60,30,0.35)] ring-1 ring-cream/10">
                 <img
                   src={doctorPortrait}
-                  alt="Dr. portrait — Green Care Homes lead physician"
+                  alt="Dr. portrait — Greencare Homes lead physician"
                   width={1024}
                   height={1280}
                   loading="lazy"

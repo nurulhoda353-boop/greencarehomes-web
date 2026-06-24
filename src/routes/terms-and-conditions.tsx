@@ -5,17 +5,17 @@ import { SITE_URL } from "@/config/site";
 export const Route = createFileRoute("/terms-and-conditions")({
   head: () => ({
     meta: [
-      { title: "Terms & Conditions — Green Care Homes" },
+      { title: "Terms & Conditions — Greencare Homes" },
       {
         name: "description",
         content:
-          "The terms that govern your use of Green Care Homes’ website and home healthcare services in Bangladesh.",
+          "The terms that govern your use of Greencare Homes’ website and home healthcare services in Bangladesh.",
       },
-      { property: "og:title", content: "Terms & Conditions — Green Care Homes" },
+      { property: "og:title", content: "Terms & Conditions — Greencare Homes" },
       {
         property: "og:description",
         content:
-          "The terms that govern your use of Green Care Homes’ website and home healthcare services.",
+          "The terms that govern your use of Greencare Homes’ website and home healthcare services.",
       },
       { rel: "canonical", href: `${SITE_URL}/terms-and-conditions` } as never,
     ],
@@ -31,7 +31,7 @@ function TermsPage() {
       title="Terms & Conditions"
       updatedLabel="Last updated"
       updatedDate="26 May 2026"
-      intro="These terms describe the agreement between you and Green Care Homes when you use our website, book an appointment, or receive our home healthcare and residential services."
+      intro="These terms describe the agreement between you and Greencare Homes when you use our website, book an appointment, or receive our home healthcare and residential services."
       sections={[
         {
           heading: "Acceptance of terms",
@@ -39,7 +39,7 @@ function TermsPage() {
         },
         {
           heading: "Our services",
-          body: "Green Care Homes provides home nursing, caregiver support, physiotherapy, residential care, daycare, and respite care across Bangladesh. Service availability, scope, and pricing may vary by location and individual care needs.",
+          body: "Greencare Homes provides home nursing, caregiver support, physiotherapy, residential care, daycare, and respite care across Bangladesh. Service availability, scope, and pricing may vary by location and individual care needs.",
         },
         {
           heading: "Appointments and bookings",
@@ -66,7 +66,7 @@ function TermsPage() {
         },
         {
           heading: "Limitation of liability",
-          body: "To the maximum extent permitted by law, Green Care Homes shall not be liable for indirect, incidental, or consequential damages arising from use of our website or services, except where caused by our gross negligence.",
+          body: "To the maximum extent permitted by law, Greencare Homes shall not be liable for indirect, incidental, or consequential damages arising from use of our website or services, except where caused by our gross negligence.",
         },
         {
           heading: "Changes to these terms",

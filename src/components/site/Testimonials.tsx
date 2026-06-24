@@ -13,7 +13,7 @@ type Testimonial = {
 const items: Testimonial[] = [
   {
     quote:
-      "Green Care Homes-এর কেয়ারগিভাররা আমার মায়ের যত্ন এতটাই পরিবারের মতো নিয়েছেন যে আমি বিদেশে থেকেও নিশ্চিন্ত থাকতে পারি। ফোন করলেই detailed update পাই।",
+      "Greencare Homes-এর কেয়ারগিভাররা আমার মায়ের যত্ন এতটাই পরিবারের মতো নিয়েছেন যে আমি বিদেশে থেকেও নিশ্চিন্ত থাকতে পারি। ফোন করলেই detailed update পাই।",
     name: "Tahmid R.",
     role: "Family member · Dhanmondi",
     rating: 5,

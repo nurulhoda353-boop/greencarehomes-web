@@ -17,7 +17,7 @@ export function FloatingActions() {
   }, []);
 
   const waMessage = locale === "bn"
-    ? "আসসালামু আলাইকুম, Green Care Homes-এর সেবা সম্পর্কে জানতে চাই।"
+    ? "আসসালামু আলাইকুম, Greencare Homes-এর সেবা সম্পর্কে জানতে চাই।"
     : "Hello GreenCare, I would like to know more about your services.";
   const waLabel = locale === "bn" ? "হোয়াটসঅ্যাপে চ্যাট করুন" : "Chat on WhatsApp";
   const topLabel = locale === "bn" ? "উপরে যান" : "Scroll to top";

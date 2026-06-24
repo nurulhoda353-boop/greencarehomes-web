@@ -154,13 +154,13 @@ const events = [
 export const Route = createFileRoute("/blog-and-events")({
   head: () => ({
     meta: [
-      { title: "Blog & Events — Green Care Homes" },
+      { title: "Blog & Events — Greencare Homes" },
       {
         name: "description",
         content:
-          "Stories, guides, and upcoming events on senior wellness, home healthcare, recovery, and family caregiving from Green Care Homes.",
+          "Stories, guides, and upcoming events on senior wellness, home healthcare, recovery, and family caregiving from Greencare Homes.",
       },
-      { property: "og:title", content: "Blog & Events — Green Care Homes" },
+      { property: "og:title", content: "Blog & Events — Greencare Homes" },
       {
         property: "og:description",
         content: "Senior care guides, recovery stories, and upcoming community events from Bangladesh's trusted home healthcare team.",

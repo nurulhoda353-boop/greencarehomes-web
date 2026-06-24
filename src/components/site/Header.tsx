@@ -84,7 +84,7 @@ export function Header() {
     <header className="pointer-events-none fixed inset-x-0 top-0 z-50 pt-2 sm:pt-4">
       <div className="pointer-events-auto mx-auto flex h-16 w-[min(1320px,94%)] items-center justify-between gap-4 rounded-xl border border-white/70 bg-white/95 px-3 shadow-pill backdrop-blur-xl sm:h-[76px] sm:w-[min(1320px,92%)] sm:rounded-full sm:px-6">
         <Link to={homeHref} className="flex items-center gap-2">
-          <img src={logo} alt="Green Care Homes" loading="eager" fetchPriority="high" decoding="async" className="h-12 w-auto md:h-12" />
+          <img src={logo} alt="Greencare Homes" loading="eager" fetchPriority="high" decoding="async" className="h-12 w-auto md:h-12" />
         </Link>
 
         <nav className="hidden items-center lg:flex">
@@ -193,7 +193,7 @@ export function Header() {
         >
           <div className="flex items-center justify-between px-5 pt-5 pb-4">
             <Link to={homeHref} onClick={() => setOpen(false)} className="flex items-center">
-              <img src={logo} alt="Green Care Homes" loading="eager" decoding="async" className="h-11 w-auto" />
+              <img src={logo} alt="Greencare Homes" loading="eager" decoding="async" className="h-11 w-auto" />
             </Link>
             <button
               onClick={() => setOpen(false)}

@@ -97,7 +97,7 @@ export function Footer() {
     email: locale === "bn" ? "ইমেইল" : "Email",
     address: locale === "bn" ? "ঠিকানা" : "Address",
     addressValue: locale === "bn" ? "হাউস-৭, ঢাকা উদ্যান মেইন রোড, মোহাম্মদপুর, ঢাকা" : "House-7, Dhaka Uddan Main Road, Mohammadpur, Dhaka",
-    rights: locale === "bn" ? `© ${new Date().getFullYear()} Green Care Homes. সর্বস্বত্ব সংরক্ষিত।` : `© ${new Date().getFullYear()} Green Care Homes. All rights reserved.`,
+    rights: locale === "bn" ? `© ${new Date().getFullYear()} Greencare Homes. সর্বস্বত্ব সংরক্ষিত।` : `© ${new Date().getFullYear()} Greencare Homes. All rights reserved.`,
     madeIn: locale === "bn" ? "ভালোবাসা দিয়ে তৈরি — ঢাকা, বাংলাদেশ" : "Made with love in Dhaka, Bangladesh",
     privacy: locale === "bn" ? "গোপনীয়তা নীতি" : "Privacy Policy",
     terms: locale === "bn" ? "শর্তাবলি" : "Terms & Conditions",
@@ -120,7 +120,7 @@ export function Footer() {
           <div className="flex items-center justify-center">
             <img
               src={logo}
-              alt="Green Care Homes — Compassionate Care, Safe Environment"
+              alt="Greencare Homes — Compassionate Care, Safe Environment"
               loading="lazy"
               decoding="async"
               className="h-12 max-w-full object-contain"
@@ -304,7 +304,7 @@ export function Footer() {
             <div className="flex items-center justify-center">
               <img
                 src={logo}
-                alt="Green Care Homes — Compassionate Care, Safe Environment"
+                alt="Greencare Homes — Compassionate Care, Safe Environment"
                 loading="lazy"
                 decoding="async"
                 className="h-14 w-auto"

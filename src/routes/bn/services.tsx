@@ -197,13 +197,13 @@ const bnStats = [
 export const Route = createFileRoute("/bn/services")({
   head: () => ({
     meta: [
-      { title: "আমাদের সেবা — Green Care Homes" },
+      { title: "আমাদের সেবা — Greencare Homes" },
       {
         name: "description",
         content:
           "রেসিডেনশিয়াল কেয়ার, হোম নার্সিং, ফিজিওথেরাপি, ডে কেয়ার ও রেসপাইট সেবা — বাংলাদেশজুড়ে মর্যাদাপূর্ণ যত্নের একটি সমন্বিত ইকোসিস্টেম।",
       },
-      { property: "og:title", content: "আমাদের সেবা — Green Care Homes" },
+      { property: "og:title", content: "আমাদের সেবা — Greencare Homes" },
       {
         property: "og:description",
         content:
@@ -315,7 +315,7 @@ function ServicesPage() {
           <motion.div {...fadeUp}>
             <div className="relative">
               <div className="absolute -inset-4 rounded-[36px] bg-gradient-to-br from-brand/30 via-brand-deep/10 to-transparent blur-2xl" />
-              <img src={heroNurseImg} alt="গ্রিন লিভিং রেসিডেন্স — Green Care Homes" loading="lazy" className="relative w-full rounded-[32px] object-cover shadow-[0_30px_80px_-30px_rgba(20,60,30,0.30)]" style={{ aspectRatio: "4/5" }} />
+              <img src={heroNurseImg} alt="গ্রিন লিভিং রেসিডেন্স — Greencare Homes" loading="lazy" className="relative w-full rounded-[32px] object-cover shadow-[0_30px_80px_-30px_rgba(20,60,30,0.30)]" style={{ aspectRatio: "4/5" }} />
               <div className="absolute -bottom-5 -right-5 rounded-2xl border border-cream/15 bg-[oklch(0.18_0.012_165)]/95 px-5 py-3 backdrop-blur-md">
                 <p className="text-[10px] tracking-[0.12em] text-cream/55">ফ্ল্যাগশিপ</p>
                 <p className="text-sm font-bold text-cream">গ্রিন লিভিং রেসিডেন্স</p>
@@ -445,9 +445,9 @@ function ServicesPage() {
         title={<>সেবা সম্পর্কে যত প্রশ্ন, <span className="italic font-light text-brand">তার স্বচ্ছ উত্তর।</span></>}
         description="সময়সূচি, প্রতিস্থাপন, একাধিক সেবা একসঙ্গে নেওয়া ও মূল্য — পরিবারগুলো বাস্তবে যেসব জিজ্ঞেস করেন।"
         image={faqCareImg}
-        imageAlt="Green Care Homes — পরিবারের পাশে কেয়ার টিম"
+        imageAlt="Greencare Homes — পরিবারের পাশে কেয়ার টিম"
         caption={"\u201Cএক পরিকল্পনা, এক টিম, এক শান্ত ছন্দে যত্ন।\u201D"}
-        captionLabel="Green Care Homes"
+        captionLabel="Greencare Homes"
         items={faqs}
         footerText="আপনার প্রশ্নের উত্তর পাননি?"
         footerLinkText="আমাদের কেয়ার টিমের সঙ্গে কথা বলুন"

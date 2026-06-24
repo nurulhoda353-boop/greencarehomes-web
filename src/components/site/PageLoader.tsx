@@ -43,7 +43,7 @@ export function PageLoader() {
       <div className="relative flex flex-col items-center justify-center gap-6">
         <img
           src={loaderLogo}
-          alt="Green Care Homes"
+          alt="Greencare Homes"
           className="relative h-16 w-auto object-contain sm:h-20 animate-[loader-breathe_1.8s_ease-in-out_infinite]"
         />
         <div className="relative h-[2px] w-40 overflow-hidden rounded-full bg-black/5">

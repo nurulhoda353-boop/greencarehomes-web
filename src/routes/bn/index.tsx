@@ -45,13 +45,13 @@ const BASE = SITE_URL;
 export const Route = createFileRoute("/bn/")({
   head: () => ({
     meta: [
-      { title: "Green Care Homes — প্রবীণ ও পরিবারের জন্য মমতাময় যত্ন" },
+      { title: "Greencare Homes — প্রবীণ ও পরিবারের জন্য মমতাময় যত্ন" },
       {
         name: "description",
         content:
           "বাংলাদেশজুড়ে পেশাদার হোম হেলথকেয়ার, নার্সিং, ফিজিওথেরাপি ও অ্যাসিস্টেড লিভিং সেবা। প্রবীণ, রোগী ও পরিবারের জন্য ২৪/৭ মমতাময় যত্ন।",
       },
-      { property: "og:title", content: "Green Care Homes — প্রবীণ ও পরিবারের জন্য মমতাময় যত্ন" },
+      { property: "og:title", content: "Greencare Homes — প্রবীণ ও পরিবারের জন্য মমতাময় যত্ন" },
       { property: "og:description", content: "উন্নত জীবনের জন্য নিবেদিত স্বাস্থ্যসেবা সহায়তা। বাংলাদেশজুড়ে ২৪/৭ মমতাময় যত্ন।" },
       { property: "og:url", content: `${BASE}/bn` },
       { property: "og:locale", content: "bn_BD" },
@@ -561,7 +561,7 @@ function HomePage() {
             </h2>
 
             <p className="mt-6 text-[17px] leading-[1.85] text-foreground/75">
-              Green Care Homes একটি নিবেদিত হোম হেলথকেয়ার ও অ্যাসিস্টেড লিভিং প্রতিষ্ঠান —
+              Greencare Homes একটি নিবেদিত হোম হেলথকেয়ার ও অ্যাসিস্টেড লিভিং প্রতিষ্ঠান —
               যা বাংলাদেশের প্রবীণ, রোগী ও পরিবারের জীবনমান উন্নত করতে প্রতিশ্রুতিবদ্ধ।
             </p>
             <p className="mt-4 text-[15px] leading-[1.85] text-muted-foreground">
@@ -739,7 +739,7 @@ function HomePage() {
               <div className="media-zoom relative overflow-hidden rounded-[28px] shadow-[0_50px_100px_-30px_rgba(20,60,30,0.35)] ring-1 ring-cream/10">
                 <img
                   src={doctorPortrait}
-                  alt="Green Care Homes-এর প্রধান চিকিৎসকের প্রতিকৃতি"
+                  alt="Greencare Homes-এর প্রধান চিকিৎসকের প্রতিকৃতি"
                   width={1024}
                   height={1280}
                   loading="lazy"

@@ -1,5 +1,5 @@
 /**
- * Single source of truth for Green Care Homes contact data.
+ * Single source of truth for Greencare Homes contact data.
  * Update here once — every page/footer/JSON-LD/form references this file.
  */
 

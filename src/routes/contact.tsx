@@ -60,13 +60,13 @@ const faqs = [
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Green Care Homes" },
+      { title: "Contact — Greencare Homes" },
       {
         name: "description",
         content:
-          "Reach Green Care Homes 24/7 — call, WhatsApp, email, or visit. Book a free home assessment for compassionate home healthcare across Bangladesh.",
+          "Reach Greencare Homes 24/7 — call, WhatsApp, email, or visit. Book a free home assessment for compassionate home healthcare across Bangladesh.",
       },
-      { property: "og:title", content: "Contact — Green Care Homes" },
+      { property: "og:title", content: "Contact — Greencare Homes" },
       { property: "og:description", content: "Call, message, or visit — our care advisors are available 24/7." },
       { property: "og:url", content: `${SITE_URL}/contact` },
       { property: "og:image", content: `${SITE_URL}/og-cover.jpg` },
@@ -366,7 +366,7 @@ function ContactPage() {
             <div className="absolute -inset-4 rounded-[32px] bg-gradient-to-br from-brand/30 via-brand-deep/15 to-transparent blur-2xl" />
             <div className="relative overflow-hidden rounded-[28px] border border-cream/10 bg-cream/[0.04] shadow-[0_30px_90px_-32px_rgba(0,0,0,0.65)] backdrop-blur-md">
               <iframe
-                title="Green Care Homes location — Mohammadpur, Dhaka"
+                title="Greencare Homes location — Mohammadpur, Dhaka"
                 src="https://www.google.com/maps?q=House+7+Dhaka+Uddan+Main+Road+Mohammadpur+Dhaka&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -388,7 +388,7 @@ function ContactPage() {
         }
         description="A few of the things families most often ask before reaching out — so the conversation starts where it matters most."
         image={faqCareImg}
-        imageAlt="Green Care Homes care advisor speaking with a family"
+        imageAlt="Greencare Homes care advisor speaking with a family"
         caption={"\u201CA calm conversation is where every good care plan begins.\u201D"}
         items={faqs}
         footerText="Prefer to talk it through?"

@@ -62,13 +62,13 @@ const faqs = [
 export const Route = createFileRoute("/bn/contact")({
   head: () => ({
     meta: [
-      { title: "যোগাযোগ | Green Care Homes" },
+      { title: "যোগাযোগ | Greencare Homes" },
       {
         name: "description",
         content:
-          "Green Care Homes-এর সঙ্গে যোগাযোগ করুন হোম কেয়ার, নার্সিং, কেয়ারগিভার, ফিজিওথেরাপি, অ্যাসিস্টেড লিভিং ও ডে কেয়ার সেবার জন্য।",
+          "Greencare Homes-এর সঙ্গে যোগাযোগ করুন হোম কেয়ার, নার্সিং, কেয়ারগিভার, ফিজিওথেরাপি, অ্যাসিস্টেড লিভিং ও ডে কেয়ার সেবার জন্য।",
       },
-      { property: "og:title", content: "যোগাযোগ | Green Care Homes" },
+      { property: "og:title", content: "যোগাযোগ | Greencare Homes" },
       { property: "og:description", content: "কল, মেসেজ বা সরাসরি ভিজিট — আমাদের কেয়ার পরামর্শকরা ২৪/৭ পাশে আছেন।" },
       { property: "og:url", content: `${BASE}/bn/contact` },
       { property: "og:locale", content: "bn_BD" },
@@ -374,7 +374,7 @@ function ContactPage() {
             <div className="absolute -inset-4 rounded-[32px] bg-gradient-to-br from-brand/30 via-brand-deep/15 to-transparent blur-2xl" />
             <div className="relative overflow-hidden rounded-[28px] border border-cream/10 bg-cream/[0.04] shadow-[0_30px_90px_-32px_rgba(0,0,0,0.65)] backdrop-blur-md">
               <iframe
-                title="Green Care Homes অবস্থান — মোহাম্মদপুর, ঢাকা"
+                title="Greencare Homes অবস্থান — মোহাম্মদপুর, ঢাকা"
                 src="https://www.google.com/maps?q=House+7+Dhaka+Uddan+Main+Road+Mohammadpur+Dhaka&output=embed"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
@@ -396,7 +396,7 @@ function ContactPage() {
         }
         description="যোগাযোগের আগে পরিবার সাধারণত যেসব প্রশ্ন করে — যাতে কথোপকথন শুরু হয় ঠিক যেখানে শুরু হওয়া উচিত।"
         image={faqCareImg}
-        imageAlt="Green Care Homes-এর কেয়ার পরামর্শক একটি পরিবারের সঙ্গে কথা বলছেন"
+        imageAlt="Greencare Homes-এর কেয়ার পরামর্শক একটি পরিবারের সঙ্গে কথা বলছেন"
         caption={"\u201Cএকটি স্বস্তিদায়ক কথোপকথন থেকেই শুরু হয় প্রতিটি ভালো কেয়ার প্ল্যান।\u201D"}
         items={faqs}
         footerText="সরাসরি কথা বলতে চান?"

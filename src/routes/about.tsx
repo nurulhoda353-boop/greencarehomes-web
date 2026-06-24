@@ -22,7 +22,10 @@ import {
 
 import heroNurseImg from "@/assets/hero-nurse.jpg?format=webp&quality=80&w=1400";
 import faqCareImg from "@/assets/faq-care.jpg?format=webp&quality=80&w=1400";
-import ceoImg from "@/assets/ceo-shariful-islam.png";
+import ceoImg from "@/assets/ceo-shariful-islam-new.jpg";
+import teamMarufImg from "@/assets/team-maruf.png";
+import teamEmonImg from "@/assets/team-emon.png";
+import teamSwaponImg from "@/assets/team-swapon.jpg";
 import { FaqSection } from "@/components/site/FaqSection";
 import { SITE_URL } from "@/config/site";
 
@@ -106,8 +109,8 @@ const ecosystem = [
 
 const faqs = [
   {
-    q: "When was Green Care Homes established?",
-    a: "Green Care Homes was founded in early 2026 by a team of practicing clinicians and care professionals. While the company is young, our founding team brings over 15 years of combined experience in geriatric care, nursing, and home healthcare across Bangladesh.",
+    q: "When was Greencare Homes established?",
+    a: "Greencare Homes was founded in early 2026 by a team of practicing clinicians and care professionals. While the company is young, our founding team brings over 15 years of combined experience in geriatric care, nursing, and home healthcare across Bangladesh.",
   },
   {
     q: "What makes your care ecosystem different?",
@@ -135,9 +138,9 @@ const faqs = [
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Green Care Homes" },
-      { name: "description", content: "Our story, mission, values, and the care ecosystem that makes Green Care Homes a trusted name in Bangladesh." },
-      { property: "og:title", content: "About Us — Green Care Homes" },
+      { title: "About Us — Greencare Homes" },
+      { name: "description", content: "Our story, mission, values, and the care ecosystem that makes Greencare Homes a trusted name in Bangladesh." },
+      { property: "og:title", content: "About Us — Greencare Homes" },
       { property: "og:description", content: "Discover the people, values, and ecosystem behind Bangladesh's trusted home healthcare provider." },
       { property: "og:url", content: `${SITE_URL}/about` },
       { property: "og:image", content: `${SITE_URL}/og-cover.jpg` },
@@ -171,7 +174,7 @@ function AboutPage() {
           <motion.div {...fadeUp}>
             <span className="inline-flex items-center gap-2 rounded-full border border-cream/15 bg-cream/[0.06] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-cream/80 backdrop-blur-sm">
               <Leaf className="h-3.5 w-3.5 text-brand" />
-              About Green Care Homes
+              About Greencare Homes
             </span>
           </motion.div>
 
@@ -229,7 +232,7 @@ function AboutPage() {
               <span className="italic font-medium text-brand">born in 2026</span>
             </h2>
             <p className="mt-6 text-[15px] leading-[1.75] text-muted-foreground">
-              Green Care Homes was founded in early 2026 by a circle of practicing clinicians and care professionals who saw the same gap, again and again — families across Bangladesh struggling to find reliable, dignified, and coordinated care for the people they love most.
+              Greencare Homes was founded in early 2026 by a circle of practicing clinicians and care professionals who saw the same gap, again and again — families across Bangladesh struggling to find reliable, dignified, and coordinated care for the people they love most.
             </p>
             <p className="mt-4 text-[15px] leading-[1.75] text-muted-foreground">
               We are young as a company, but rich in experience. Our founding team brings more than fifteen years of combined work in geriatric medicine, nursing, and home healthcare — and we are building, from day one, a single connected ecosystem instead of another fragmented service.
@@ -255,7 +258,7 @@ function AboutPage() {
               <div className="absolute -inset-4 rounded-[32px] bg-gradient-to-br from-brand/20 via-brand-deep/10 to-transparent blur-xl" />
               <img
                 src={heroNurseImg}
-                alt="Green Care Homes caregiver providing compassionate home care"
+                alt="Greencare Homes caregiver providing compassionate home care"
                 loading="lazy"
                 decoding="async"
                 className="relative w-full rounded-[28px] object-cover shadow-soft"
@@ -384,30 +387,30 @@ function AboutPage() {
           >
             {/* Portrait */}
             <div className="relative lg:col-span-5">
-              <div className="relative mx-auto max-w-md">
-                <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-brand/20 via-transparent to-[oklch(0.32_0.06_155)]/20 blur-2xl" />
-                <div className="relative overflow-hidden rounded-[2rem] border border-border/40 bg-white shadow-[0_30px_80px_-30px_rgba(20,60,30,0.45)]">
+              <div className="relative mx-auto max-w-[24rem]">
+                <div className="absolute -inset-2 rounded-[2rem] bg-brand/10 blur-lg transition-all duration-500 hover:bg-brand/15" />
+                <div className="relative overflow-hidden rounded-[2rem] border border-white/60 bg-white/40 shadow-xl ring-1 ring-black/5">
                   <img
                     src={ceoImg}
-                    alt="Md. Shariful Islam — CEO of Green Care Homes"
-                    className="aspect-square w-full object-cover"
+                    alt="Md. Shariful Islam — Managing Director of Greencare Homes"
+                    className="aspect-[4/5] w-full object-cover object-top transition-transform duration-700 hover:scale-[1.02]"
                     loading="lazy"
                   />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-5">
-                    <p className="font-display text-lg font-bold text-cream">Md. Shariful Islam</p>
-                    <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-cream/80">
-                      Founder & CEO
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-24 pb-7 px-8 text-left">
+                    <p className="font-display text-2xl font-bold text-white">Md. Shariful Islam</p>
+                    <p className="mt-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-white/80">
+                      Managing Director
                     </p>
                   </div>
                 </div>
 
-                <div className="absolute -bottom-5 -right-5 hidden rounded-2xl border border-border/40 bg-white px-4 py-3 shadow-soft sm:block">
-                  <div className="flex items-center gap-2">
+                <div className="absolute -bottom-5 -right-5 hidden rounded-2xl border border-white/80 bg-white/95 px-5 py-4 shadow-xl backdrop-blur-md sm:flex items-center gap-3">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-brand/10">
                     <Sparkles className="h-4 w-4 text-brand" />
-                    <span className="text-[11px] font-semibold uppercase tracking-wider text-brand-deep">
-                      Visionary Leader
-                    </span>
                   </div>
+                  <span className="text-xs font-bold uppercase tracking-widest text-brand-deep">
+                    Visionary Leader
+                  </span>
                 </div>
               </div>
             </div>
@@ -419,12 +422,12 @@ function AboutPage() {
                   &ldquo;
                 </span>
                 <p className="font-display text-xl leading-relaxed text-brand-deep sm:text-2xl">
-                  Green Care Homes was born from a simple belief — that every elderly person deserves
+                  Greencare Homes was born from a simple belief — that every elderly person deserves
                   to age with dignity, comfort, and the warmth of family-like care.
                 </p>
                 <p className="mt-5 text-[15px] leading-[1.8] text-muted-foreground sm:text-base">
                   As a founder, I've walked alongside countless families navigating the most tender chapters
-                  of their loved ones' lives. We built Green Care Homes to be more than a service — it's a
+                  of their loved ones' lives. We built Greencare Homes to be more than a service — it's a
                   promise of presence, professionalism, and genuine compassion in every visit, every shift,
                   every conversation.
                 </p>
@@ -437,7 +440,7 @@ function AboutPage() {
                   <div className="text-right">
                     <p className="font-display text-lg font-bold text-brand-deep">Md. Shariful Islam</p>
                     <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-brand">
-                      Founder & Chief Executive Officer
+                      Managing Director
                     </p>
                   </div>
                 </div>
@@ -447,57 +450,72 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* ===================== LEADERSHIP — LIGHT 1 ===================== */}
-      <section className="relative bg-gradient-to-b from-background via-background to-secondary/30 py-16 lg:py-20">
+      {/* ===================== LEADERSHIP — DARK PREMIUM ===================== */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-[oklch(0.32_0.06_155)] via-[oklch(0.28_0.07_152)] to-[oklch(0.24_0.08_150)] py-16 text-cream lg:py-20">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
+            backgroundSize: "36px 36px",
+            maskImage: "radial-gradient(ellipse at center, #000 35%, transparent 85%)",
+            WebkitMaskImage: "radial-gradient(ellipse at center, #000 35%, transparent 85%)",
+          }}
+        />
+        <div aria-hidden className="pointer-events-none absolute -top-20 -right-20 h-[400px] w-[400px] rounded-full bg-brand/20 blur-[120px]" />
+        <div aria-hidden className="pointer-events-none absolute -bottom-20 -left-20 h-[400px] w-[400px] rounded-full bg-brand-deep/30 blur-[120px]" />
+        
         <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
           <motion.div {...fadeUp} className="mx-auto max-w-2xl text-center">
-            <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-brand">The People</span>
-            <h2 className="mt-3 font-display text-3xl font-extrabold text-brand-deep sm:text-4xl">
-              Leadership & Care Team
+            <span className="inline-flex items-center gap-2 rounded-full border border-cream/15 bg-cream/[0.06] px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-cream/80 backdrop-blur-sm">
+              <Users className="h-3.5 w-3.5 text-brand" />
+              The People
+            </span>
+            <h2 className="mt-4 font-display text-3xl font-extrabold text-cream sm:text-4xl">
+              Leadership Team
             </h2>
-            <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">
-              Experienced professionals who combine clinical expertise with genuine human warmth. Meet the people shaping care at Green Care Homes.
+            <p className="mt-4 text-[15px] leading-relaxed text-cream/70">
+              Experienced professionals who combine clinical expertise with genuine human warmth. Meet the people shaping care at Greencare Homes.
             </p>
           </motion.div>
 
-          <motion.div {...stagger} className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <motion.div {...stagger} className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                name: "Dr. A. Rahman",
-                role: "Founder & Medical Director",
-                desc: "A practicing physician with 15+ years in geriatric and family medicine. Founded Green Care Homes to bridge the gap between hospital care and home living.",
-                since: "Founding Partner",
+                name: "Dr. Maruf Hossain",
+                role: "Chairman",
+                img: teamMarufImg,
               },
               {
-                name: "Nurse Sultana Jahan",
-                role: "Head of Nursing Operations",
-                desc: "Registered nurse with deep expertise in post-operative and palliative care. Built and leads our nursing training and quality protocols.",
-                since: "Founding Partner",
+                name: "Md. Kazi Akter Hossain Emon",
+                role: "Director",
+                img: teamEmonImg,
               },
               {
-                name: "Rezaul Karim",
-                role: "Care Ecosystem Director",
-                desc: "Coordinates home care, residence, and physiotherapy teams to ensure every family experiences one connected, seamless care plan.",
-                since: "Founding Partner",
+                name: "Md. Swapon Islam",
+                role: "Director",
+                img: teamSwaponImg,
               },
             ].map((person) => (
-
               <motion.div
                 key={person.name}
                 {...childFadeUp}
-                className="group rounded-3xl border border-border/40 bg-gradient-to-b from-white to-secondary/40 p-7 transition hover:-translate-y-1 hover:border-brand/20 hover:shadow-soft"
+                className="card-premium-dark group flex flex-col overflow-hidden p-0"
               >
-                <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[oklch(0.32_0.06_155)] via-[oklch(0.28_0.07_152)] to-[oklch(0.24_0.08_150)] text-cream text-lg font-bold shadow-[0_12px_30px_-10px_rgba(20,60,30,0.35)]">
-                    {person.name.split(" ").map((n) => n[0]).join("")}
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-brand-deep">{person.name}</h3>
-                    <p className="text-xs uppercase tracking-wider text-muted-foreground">{person.role}</p>
-                  </div>
+                <div className="relative aspect-square w-full overflow-hidden">
+                  <div className="absolute inset-0 bg-brand/10 opacity-0 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-100" />
+                  <img
+                    src={person.img}
+                    alt={person.name}
+                    className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[oklch(0.24_0.08_150)] via-[oklch(0.24_0.08_150)]/60 to-transparent opacity-100" />
                 </div>
-                <p className="mt-5 text-sm leading-relaxed text-muted-foreground">{person.desc}</p>
-                <p className="mt-4 text-[11px] font-medium uppercase tracking-wider text-brand">{person.since}</p>
+                <div className="relative z-10 -mt-8 flex flex-col items-center pb-8 text-center px-6">
+                  <h3 className="text-xl font-bold text-cream">{person.name}</h3>
+                  <p className="mt-2 text-[11px] font-semibold uppercase tracking-[0.15em] text-brand">{person.role}</p>
+                </div>
               </motion.div>
             ))}
           </motion.div>
@@ -516,7 +534,7 @@ function AboutPage() {
         description="Honest answers to the things that matter most when you are choosing care for someone you love."
         items={faqs}
         image={faqCareImg}
-        imageAlt="Compassionate nurse with patient at Green Care Homes"
+        imageAlt="Compassionate nurse with patient at Greencare Homes"
         caption={"\u201CWe care the way we'd want our own family cared for.\u201D"}
         footerText="Still have a question?"
         footerLinkText="Ask us directly"

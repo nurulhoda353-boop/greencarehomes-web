@@ -5,17 +5,17 @@ import { SITE_URL } from "@/config/site";
 export const Route = createFileRoute("/bn/privacy-policy")({
   head: () => ({
     meta: [
-      { title: "গোপনীয়তা নীতি — Green Care Homes" },
+      { title: "গোপনীয়তা নীতি — Greencare Homes" },
       {
         name: "description",
         content:
-          "Green Care Homes কীভাবে আপনার ব্যক্তিগত ও স্বাস্থ্য সংক্রান্ত তথ্য সংগ্রহ, ব্যবহার ও সুরক্ষা করে — বিস্তারিত গোপনীয়তা নীতি।",
+          "Greencare Homes কীভাবে আপনার ব্যক্তিগত ও স্বাস্থ্য সংক্রান্ত তথ্য সংগ্রহ, ব্যবহার ও সুরক্ষা করে — বিস্তারিত গোপনীয়তা নীতি।",
       },
-      { property: "og:title", content: "গোপনীয়তা নীতি — Green Care Homes" },
+      { property: "og:title", content: "গোপনীয়তা নীতি — Greencare Homes" },
       {
         property: "og:description",
         content:
-          "Green Care Homes কীভাবে আপনার ব্যক্তিগত ও স্বাস্থ্য তথ্য সংগ্রহ, ব্যবহার ও সুরক্ষা করে।",
+          "Greencare Homes কীভাবে আপনার ব্যক্তিগত ও স্বাস্থ্য তথ্য সংগ্রহ, ব্যবহার ও সুরক্ষা করে।",
       },
       { rel: "canonical", href: `${SITE_URL}/bn/privacy-policy` } as never,
     ],
@@ -31,7 +31,7 @@ function PrivacyPageBn() {
       title="গোপনীয়তা নীতি"
       updatedLabel="সর্বশেষ হালনাগাদ"
       updatedDate="২৬ মে, ২০২৬"
-      intro="Green Care Homes-এ আপনার আস্থা আমাদের সেবার ভিত্তি। এই নীতিতে ব্যাখ্যা করা হয়েছে আমরা কী কী তথ্য সংগ্রহ করি, কীভাবে ব্যবহার করি এবং কীভাবে তা গোপন ও সুরক্ষিত রাখি।"
+      intro="Greencare Homes-এ আপনার আস্থা আমাদের সেবার ভিত্তি। এই নীতিতে ব্যাখ্যা করা হয়েছে আমরা কী কী তথ্য সংগ্রহ করি, কীভাবে ব্যবহার করি এবং কীভাবে তা গোপন ও সুরক্ষিত রাখি।"
       sections={[
         {
           heading: "আমরা কী তথ্য সংগ্রহ করি",

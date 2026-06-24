@@ -155,17 +155,17 @@ const events = [
 export const Route = createFileRoute("/bn/blog-and-events")({
   head: () => ({
     meta: [
-      { title: "ব্লগ ও ইভেন্ট | Green Care Homes" },
+      { title: "ব্লগ ও ইভেন্ট | Greencare Homes" },
       {
         name: "description",
         content:
-          "Green Care Homes-এর ব্লগ ও ইভেন্ট থেকে প্রবীণ যত্ন, হোম কেয়ার, নার্সিং, কেয়ারগিভার, ফিজিওথেরাপি ও পরিবারের জন্য প্রয়োজনীয় কেয়ার গাইড সম্পর্কে জানুন।",
+          "Greencare Homes-এর ব্লগ ও ইভেন্ট থেকে প্রবীণ যত্ন, হোম কেয়ার, নার্সিং, কেয়ারগিভার, ফিজিওথেরাপি ও পরিবারের জন্য প্রয়োজনীয় কেয়ার গাইড সম্পর্কে জানুন।",
       },
-      { property: "og:title", content: "ব্লগ ও ইভেন্ট | Green Care Homes" },
+      { property: "og:title", content: "ব্লগ ও ইভেন্ট | Greencare Homes" },
       {
         property: "og:description",
         content:
-          "প্রবীণ যত্ন, রিকভারি, কেয়ারগিভার টিপস ও পরিবারের জন্য Green Care Homes-এর সাম্প্রতিক ব্লগ ও আসন্ন ইভেন্ট।",
+          "প্রবীণ যত্ন, রিকভারি, কেয়ারগিভার টিপস ও পরিবারের জন্য Greencare Homes-এর সাম্প্রতিক ব্লগ ও আসন্ন ইভেন্ট।",
       },
       { property: "og:url", content: `${BASE}/bn/blog-and-events` },
       { property: "og:locale", content: "bn_BD" },

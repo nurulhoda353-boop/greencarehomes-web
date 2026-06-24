@@ -16,7 +16,7 @@ export function TrustBadges() {
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
         <Reveal>
           <p className="mb-6 text-center text-[11px] font-semibold uppercase tracking-[0.22em] text-muted-foreground">
-            Why families choose Green Care Homes
+            Why families choose Greencare Homes
           </p>
         </Reveal>
         <div className="grid grid-cols-2 gap-x-4 gap-y-5 sm:grid-cols-3 lg:grid-cols-6">

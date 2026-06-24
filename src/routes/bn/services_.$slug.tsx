@@ -691,14 +691,14 @@ export const Route = createFileRoute("/bn/services_/$slug")({
   head: ({ params }) => {
     const s = services[params.slug as keyof typeof services];
     if (!s) {
-      return { meta: [{ title: "সেবা পাওয়া যায়নি — Green Care Homes" }] };
+      return { meta: [{ title: "সেবা পাওয়া যায়নি — Greencare Homes" }] };
     }
     const url = `${BASE}/bn/services/${s.slug}`;
     return {
       meta: [
-        { title: `${s.title} — Green Care Homes` },
+        { title: `${s.title} — Greencare Homes` },
         { name: "description", content: s.tagline },
-        { property: "og:title", content: `${s.title} — Green Care Homes` },
+        { property: "og:title", content: `${s.title} — Greencare Homes` },
         { property: "og:description", content: s.tagline },
         { property: "og:url", content: url },
         { property: "og:type", content: "article" },

@@ -226,13 +226,13 @@ const faqs = [
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Our Services — Green Care Homes" },
+      { title: "Our Services — Greencare Homes" },
       {
         name: "description",
         content:
           "Residential care, home nursing, physiotherapy, day care, and respite services — one connected ecosystem of dignified care across Bangladesh.",
       },
-      { property: "og:title", content: "Our Services — Green Care Homes" },
+      { property: "og:title", content: "Our Services — Greencare Homes" },
       {
         property: "og:description",
         content:
@@ -428,7 +428,7 @@ function ServicesPage() {
               <div className="absolute -inset-4 rounded-[36px] bg-gradient-to-br from-brand/30 via-brand-deep/10 to-transparent blur-2xl" />
               <img
                 src={heroNurseImg}
-                alt="Green Living Residence — assisted living at Green Care Homes"
+                alt="Green Living Residence — assisted living at Greencare Homes"
                 loading="lazy"
                 decoding="async"
                 className="relative w-full rounded-[32px] object-cover shadow-[0_30px_80px_-30px_rgba(20,60,30,0.30)]"
@@ -649,7 +649,7 @@ function ServicesPage() {
         }
         description="Practical answers about scheduling, replacements, combining services, and pricing — the things families actually ask."
         image={faqCareImg}
-        imageAlt="Green Care Homes service team supporting a family"
+        imageAlt="Greencare Homes service team supporting a family"
         caption={"\u201COne plan, one team, one calm rhythm of care.\u201D"}
         items={faqs}
       />

@@ -34,13 +34,13 @@ const BASE = SITE_URL;
 export const Route = createFileRoute("/bn/book-appointment")({
   head: () => ({
     meta: [
-      { title: "অ্যাপয়েন্টমেন্ট বুক করুন | Green Care Homes" },
+      { title: "অ্যাপয়েন্টমেন্ট বুক করুন | Greencare Homes" },
       {
         name: "description",
         content:
-          "আপনার প্রিয়জনের জন্য হোম কেয়ার, নার্সিং, কেয়ারগিভার, ফিজিওথেরাপি বা অ্যাসিস্টেড লিভিং সেবার অ্যাপয়েন্টমেন্ট বুক করুন Green Care Homes-এ।",
+          "আপনার প্রিয়জনের জন্য হোম কেয়ার, নার্সিং, কেয়ারগিভার, ফিজিওথেরাপি বা অ্যাসিস্টেড লিভিং সেবার অ্যাপয়েন্টমেন্ট বুক করুন Greencare Homes-এ।",
       },
-      { property: "og:title", content: "অ্যাপয়েন্টমেন্ট বুক করুন | Green Care Homes" },
+      { property: "og:title", content: "অ্যাপয়েন্টমেন্ট বুক করুন | Greencare Homes" },
       {
         property: "og:description",
         content:
@@ -462,7 +462,7 @@ function BookAppointmentPage() {
               )}
             </button>
             <p className="mt-3 text-center text-[11px] text-muted-foreground">
-              জমা দিয়ে আপনি Green Care Homes থেকে নিশ্চিতকরণ কল গ্রহণে সম্মত হচ্ছেন। আপনার তথ্য কখনোই শেয়ার করা হবে না।
+              জমা দিয়ে আপনি Greencare Homes থেকে নিশ্চিতকরণ কল গ্রহণে সম্মত হচ্ছেন। আপনার তথ্য কখনোই শেয়ার করা হবে না।
             </p>
           </motion.form>
 

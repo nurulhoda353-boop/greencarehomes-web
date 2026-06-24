@@ -5,17 +5,17 @@ import { SITE_URL } from "@/config/site";
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — Green Care Homes" },
+      { title: "Privacy Policy — Greencare Homes" },
       {
         name: "description",
         content:
-          "How Green Care Homes collects, uses, and protects your personal and health information across our home healthcare services in Bangladesh.",
+          "How Greencare Homes collects, uses, and protects your personal and health information across our home healthcare services in Bangladesh.",
       },
-      { property: "og:title", content: "Privacy Policy — Green Care Homes" },
+      { property: "og:title", content: "Privacy Policy — Greencare Homes" },
       {
         property: "og:description",
         content:
-          "How Green Care Homes collects, uses, and protects your personal and health information.",
+          "How Greencare Homes collects, uses, and protects your personal and health information.",
       },
       { rel: "canonical", href: `${SITE_URL}/privacy-policy` } as never,
     ],
@@ -31,7 +31,7 @@ function PrivacyPage() {
       title="Privacy Policy"
       updatedLabel="Last updated"
       updatedDate="26 May 2026"
-      intro="At Green Care Homes, your trust is the foundation of our care. This policy explains what information we collect, how we use it, and the steps we take to keep it private and secure."
+      intro="At Greencare Homes, your trust is the foundation of our care. This policy explains what information we collect, how we use it, and the steps we take to keep it private and secure."
       sections={[
         {
           heading: "Information we collect",

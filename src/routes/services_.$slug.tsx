@@ -733,16 +733,16 @@ export const Route = createFileRoute("/services_/$slug")({
     const s = services[params.slug as keyof typeof services];
     if (!s) {
       return {
-        meta: [{ title: "Service not found — Green Care Homes" }],
+        meta: [{ title: "Service not found — Greencare Homes" }],
       };
     }
     const url = `${SITE_URL}/services/${s.slug}`;
     const ogImage = `${SITE_URL}/og-cover.jpg`;
     return {
       meta: [
-        { title: `${s.title} — Green Care Homes` },
+        { title: `${s.title} — Greencare Homes` },
         { name: "description", content: s.tagline },
-        { property: "og:title", content: `${s.title} — Green Care Homes` },
+        { property: "og:title", content: `${s.title} — Greencare Homes` },
         { property: "og:description", content: s.tagline },
         { property: "og:url", content: url },
         { property: "og:type", content: "article" },

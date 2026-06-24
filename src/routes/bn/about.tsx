@@ -22,7 +22,10 @@ import {
 
 import heroNurseImg from "@/assets/hero-nurse.jpg?format=webp&quality=80&w=1400";
 import faqCareImg from "@/assets/faq-care.jpg?format=webp&quality=80&w=1400";
-import ceoImg from "@/assets/ceo-shariful-islam.png";
+import ceoImg from "@/assets/ceo-shariful-islam-new.jpg";
+import teamMarufImg from "@/assets/team-maruf.png";
+import teamEmonImg from "@/assets/team-emon.png";
+import teamSwaponImg from "@/assets/team-swapon.jpg";
 import { FaqSection } from "@/components/site/FaqSection";
 import { SITE_URL } from "@/config/site";
 
@@ -107,8 +110,8 @@ const ecosystem = [
 
 const faqs = [
   {
-    q: "Green Care Homes কবে প্রতিষ্ঠিত হয়েছে?",
-    a: "Green Care Homes ২০২৬ সালের শুরুতে একদল চিকিৎসক ও কেয়ার পেশাজীবীর হাতে গড়ে ওঠে। প্রতিষ্ঠান হিসেবে তরুণ হলেও, আমাদের প্রতিষ্ঠাতা দলের বাংলাদেশে বয়স্ক যত্ন, নার্সিং ও হোম হেলথকেয়ারে সম্মিলিতভাবে ১৫ বছরের বেশি অভিজ্ঞতা রয়েছে।",
+    q: "Greencare Homes কবে প্রতিষ্ঠিত হয়েছে?",
+    a: "Greencare Homes ২০২৬ সালের শুরুতে একদল চিকিৎসক ও কেয়ার পেশাজীবীর হাতে গড়ে ওঠে। প্রতিষ্ঠান হিসেবে তরুণ হলেও, আমাদের প্রতিষ্ঠাতা দলের বাংলাদেশে বয়স্ক যত্ন, নার্সিং ও হোম হেলথকেয়ারে সম্মিলিতভাবে ১৫ বছরের বেশি অভিজ্ঞতা রয়েছে।",
   },
   {
     q: "আপনাদের কেয়ার ইকোসিস্টেম কেন আলাদা?",
@@ -135,9 +138,9 @@ const faqs = [
 export const Route = createFileRoute("/bn/about")({
   head: () => ({
     meta: [
-      { title: "আমাদের সম্পর্কে — Green Care Homes" },
-      { name: "description", content: "ঢাকাভিত্তিক বিশ্বস্ত হোম হেলথকেয়ার ও অ্যাসিস্টেড লিভিং — Green Care Homes-এর যাত্রা, মূল্যবোধ ও সংযুক্ত কেয়ার ইকোসিস্টেম।" },
-      { property: "og:title", content: "আমাদের সম্পর্কে — Green Care Homes" },
+      { title: "আমাদের সম্পর্কে — Greencare Homes" },
+      { name: "description", content: "ঢাকাভিত্তিক বিশ্বস্ত হোম হেলথকেয়ার ও অ্যাসিস্টেড লিভিং — Greencare Homes-এর যাত্রা, মূল্যবোধ ও সংযুক্ত কেয়ার ইকোসিস্টেম।" },
+      { property: "og:title", content: "আমাদের সম্পর্কে — Greencare Homes" },
       { property: "og:description", content: "বাংলাদেশে চিকিৎসক-নেতৃত্বাধীন, পরিবার-কেন্দ্রিক হোম কেয়ারের নতুন মান।" },
       { property: "og:url", content: `${BASE}/bn/about` },
       { property: "og:locale", content: "bn_BD" },
@@ -177,7 +180,7 @@ function AboutPage() {
           <motion.div {...fadeUp}>
             <span className="inline-flex items-center gap-2 rounded-full border border-cream/15 bg-cream/[0.06] px-4 py-1.5 text-[11px] font-semibold tracking-wider text-cream/80 backdrop-blur-sm">
               <Leaf className="h-3.5 w-3.5 text-brand" />
-              Green Care Homes সম্পর্কে
+              Greencare Homes সম্পর্কে
             </span>
           </motion.div>
 
@@ -231,7 +234,7 @@ function AboutPage() {
               <span className="italic font-medium text-brand">২০২৬-এ যার শুরু</span>
             </h2>
             <p className="mt-6 text-[15px] leading-[1.85] text-muted-foreground">
-              Green Care Homes ২০২৬ সালের শুরুতে গড়ে ওঠে একদল কর্মরত চিকিৎসক ও কেয়ার পেশাজীবীর হাতে — যাঁরা বারবার একই শূন্যতা দেখেছেন: বাংলাদেশের পরিবারগুলো তাঁদের সবচেয়ে প্রিয়জনের জন্য নির্ভরযোগ্য, মর্যাদাপূর্ণ ও সংযুক্ত যত্ন খুঁজে পাচ্ছেন না।
+              Greencare Homes ২০২৬ সালের শুরুতে গড়ে ওঠে একদল কর্মরত চিকিৎসক ও কেয়ার পেশাজীবীর হাতে — যাঁরা বারবার একই শূন্যতা দেখেছেন: বাংলাদেশের পরিবারগুলো তাঁদের সবচেয়ে প্রিয়জনের জন্য নির্ভরযোগ্য, মর্যাদাপূর্ণ ও সংযুক্ত যত্ন খুঁজে পাচ্ছেন না।
             </p>
             <p className="mt-4 text-[15px] leading-[1.85] text-muted-foreground">
               আমরা প্রতিষ্ঠান হিসেবে তরুণ, তবে অভিজ্ঞতায় সমৃদ্ধ। আমাদের প্রতিষ্ঠাতা দলের রয়েছে জেরিয়াট্রিক চিকিৎসা, নার্সিং ও হোম হেলথকেয়ারে ১৫ বছরের বেশি সম্মিলিত কাজের অভিজ্ঞতা — এবং প্রথম দিন থেকেই আমরা গড়ছি একটি সংযুক্ত ইকোসিস্টেম, বিচ্ছিন্ন সেবা নয়।
@@ -253,7 +256,7 @@ function AboutPage() {
               <div className="absolute -inset-4 rounded-[32px] bg-gradient-to-br from-brand/20 via-brand-deep/10 to-transparent blur-xl" />
               <img
                 src={heroNurseImg}
-                alt="Green Care Homes-এর মমতাময়ী কেয়ারগিভার বাসায় যত্ন দিচ্ছেন"
+                alt="Greencare Homes-এর মমতাময়ী কেয়ারগিভার বাসায় যত্ন দিচ্ছেন"
                 loading="lazy"
                 decoding="async"
                 className="relative w-full rounded-[28px] object-cover shadow-soft"
@@ -368,26 +371,30 @@ function AboutPage() {
 
           <motion.div {...fadeUp} className="mt-12 grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-14">
             <div className="relative lg:col-span-5">
-              <div className="relative mx-auto max-w-md">
-                <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-brand/20 via-transparent to-[oklch(0.32_0.06_155)]/20 blur-2xl" />
-                <div className="relative overflow-hidden rounded-[2rem] border border-border/40 bg-white shadow-[0_30px_80px_-30px_rgba(20,60,30,0.45)]">
+              <div className="relative mx-auto max-w-[24rem]">
+                <div className="absolute -inset-2 rounded-[2rem] bg-brand/10 blur-lg transition-all duration-500 hover:bg-brand/15" />
+                <div className="relative overflow-hidden rounded-[2rem] border border-white/60 bg-white/40 shadow-xl ring-1 ring-black/5">
                   <img
                     src={ceoImg}
-                    alt="মোঃ শরিফুল ইসলাম — Green Care Homes-এর সিইও"
-                    className="aspect-square w-full object-cover"
+                    alt="মোঃ শরিফুল ইসলাম — Greencare Homes-এর ম্যানেজিং ডিরেক্টর"
+                    className="aspect-[4/5] w-full object-cover object-top transition-transform duration-700 hover:scale-[1.02]"
                     loading="lazy"
                   />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-5">
-                    <p className="font-display text-lg font-bold text-cream">মোঃ শরিফুল ইসলাম</p>
-                    <p className="text-[11px] font-medium tracking-wider text-cream/80">প্রতিষ্ঠাতা ও সিইও</p>
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent pt-24 pb-7 px-8 text-left">
+                    <p className="font-display text-2xl font-bold text-white">মোঃ শরিফুল ইসলাম</p>
+                    <p className="mt-1.5 text-[11px] font-bold tracking-wider text-white/80">
+                      ম্যানেজিং ডিরেক্টর
+                    </p>
                   </div>
                 </div>
 
-                <div className="absolute -bottom-5 -right-5 hidden rounded-2xl border border-border/40 bg-white px-4 py-3 shadow-soft sm:block">
-                  <div className="flex items-center gap-2">
+                <div className="absolute -bottom-5 -right-5 hidden rounded-2xl border border-white/80 bg-white/95 px-5 py-4 shadow-xl backdrop-blur-md sm:flex items-center gap-3">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-brand/10">
                     <Sparkles className="h-4 w-4 text-brand" />
-                    <span className="text-[11px] font-semibold tracking-wider text-brand-deep">দূরদর্শী নেতৃত্ব</span>
                   </div>
+                  <span className="text-xs font-bold tracking-widest text-brand-deep">
+                    দূরদর্শী নেতৃত্ব
+                  </span>
                 </div>
               </div>
             </div>
@@ -396,10 +403,10 @@ function AboutPage() {
               <div className="relative rounded-3xl border border-border/40 bg-white/80 p-7 backdrop-blur-sm sm:p-9">
                 <span className="absolute -top-5 left-7 font-display text-7xl leading-none text-brand/30">&ldquo;</span>
                 <p className="font-display text-xl leading-[1.7] text-brand-deep sm:text-2xl">
-                  Green Care Homes-এর জন্ম একটি সরল বিশ্বাস থেকে — প্রতিটি বয়োজ্যেষ্ঠ মানুষের অধিকার আছে মর্যাদা, আরাম ও পরিবারের মতো উষ্ণ যত্নের ছায়ায় বয়সের প্রতিটি অধ্যায় পার করার।
+                  Greencare Homes-এর জন্ম একটি সরল বিশ্বাস থেকে — প্রতিটি বয়োজ্যেষ্ঠ মানুষের অধিকার আছে মর্যাদা, আরাম ও পরিবারের মতো উষ্ণ যত্নের ছায়ায় বয়সের প্রতিটি অধ্যায় পার করার।
                 </p>
                 <p className="mt-5 text-[15px] leading-[1.9] text-muted-foreground sm:text-base">
-                  প্রতিষ্ঠাতা হিসেবে আমি অসংখ্য পরিবারের পাশে হেঁটেছি — যাঁরা তাঁদের প্রিয়জনের জীবনের সবচেয়ে কোমল অধ্যায়গুলো পেরিয়ে যাচ্ছিলেন। সেই অভিজ্ঞতা থেকেই Green Care Homes-কে আমরা শুধু একটি সেবা নয়, একটি অঙ্গীকার হিসেবে গড়েছি — প্রতিটি ভিজিট, প্রতিটি শিফট, প্রতিটি কথোপকথনে উপস্থিতি, পেশাদারিত্ব ও সত্যিকারের সহানুভূতির অঙ্গীকার।
+                  প্রতিষ্ঠাতা হিসেবে আমি অসংখ্য পরিবারের পাশে হেঁটেছি — যাঁরা তাঁদের প্রিয়জনের জীবনের সবচেয়ে কোমল অধ্যায়গুলো পেরিয়ে যাচ্ছিলেন। সেই অভিজ্ঞতা থেকেই Greencare Homes-কে আমরা শুধু একটি সেবা নয়, একটি অঙ্গীকার হিসেবে গড়েছি — প্রতিটি ভিজিট, প্রতিটি শিফট, প্রতিটি কথোপকথনে উপস্থিতি, পেশাদারিত্ব ও সত্যিকারের সহানুভূতির অঙ্গীকার।
                 </p>
                 <p className="mt-4 text-[15px] leading-[1.9] text-muted-foreground sm:text-base">
                   আপনার সবচেয়ে মূল্যবান মানুষটির যত্নের ভার আমাদের ওপর রাখার জন্য আন্তরিক কৃতজ্ঞতা।
@@ -409,7 +416,7 @@ function AboutPage() {
                   <div className="h-px flex-1 bg-gradient-to-r from-brand/40 to-transparent" />
                   <div className="text-right">
                     <p className="font-display text-lg font-bold text-brand-deep">মোঃ শরিফুল ইসলাম</p>
-                    <p className="text-[11px] font-medium tracking-wider text-brand">প্রতিষ্ঠাতা ও চিফ এক্সিকিউটিভ অফিসার</p>
+                    <p className="text-[11px] font-medium tracking-wider text-brand">ম্যানেজিং ডিরেক্টর</p>
                   </div>
                 </div>
               </div>
@@ -418,57 +425,72 @@ function AboutPage() {
         </div>
       </section>
 
-      {/* ===================== LEADERSHIP TEAM ===================== */}
-      <section className="relative bg-gradient-to-b from-background via-background to-secondary/30 py-16 lg:py-20">
+      {/* ===================== LEADERSHIP — DARK PREMIUM ===================== */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-[oklch(0.32_0.06_155)] via-[oklch(0.28_0.07_152)] to-[oklch(0.24_0.08_150)] py-16 text-cream lg:py-20">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)",
+            backgroundSize: "36px 36px",
+            maskImage: "radial-gradient(ellipse at center, #000 35%, transparent 85%)",
+            WebkitMaskImage: "radial-gradient(ellipse at center, #000 35%, transparent 85%)",
+          }}
+        />
+        <div aria-hidden className="pointer-events-none absolute -top-20 -right-20 h-[400px] w-[400px] rounded-full bg-brand/20 blur-[120px]" />
+        <div aria-hidden className="pointer-events-none absolute -bottom-20 -left-20 h-[400px] w-[400px] rounded-full bg-brand-deep/30 blur-[120px]" />
+        
         <div className="relative mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
           <motion.div {...fadeUp} className="mx-auto max-w-2xl text-center">
-            <span className="text-[11px] font-semibold tracking-wider text-brand">আমাদের মানুষ</span>
-            <h2 className="mt-3 font-display text-3xl font-extrabold text-brand-deep sm:text-4xl">নেতৃত্ব ও কেয়ার টিম</h2>
-            <p className="mt-4 text-[15px] leading-[1.85] text-muted-foreground">
-              ক্লিনিক্যাল দক্ষতার সঙ্গে আন্তরিক মানবিক উষ্ণতা মেশানো অভিজ্ঞ পেশাজীবীরা — যাঁরা Green Care Homes-এর যত্নকে রূপ দিচ্ছেন।
+            <span className="inline-flex items-center gap-2 rounded-full border border-cream/15 bg-cream/[0.06] px-4 py-1.5 text-[11px] font-semibold tracking-wider text-cream/80 backdrop-blur-sm">
+              <Users className="h-3.5 w-3.5 text-brand" />
+              আমাদের মানুষ
+            </span>
+            <h2 className="mt-4 font-display text-3xl font-extrabold text-cream sm:text-4xl">
+              নেতৃত্ব ও টিম
+            </h2>
+            <p className="mt-4 text-[15px] leading-relaxed text-cream/70">
+              ক্লিনিক্যাল দক্ষতার সঙ্গে আন্তরিক মানবিক উষ্ণতা মেশানো অভিজ্ঞ পেশাজীবীরা — যাঁরা Greencare Homes-এর যত্নকে রূপ দিচ্ছেন।
             </p>
           </motion.div>
 
-          <motion.div {...stagger} className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <motion.div {...stagger} className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                name: "ডা. এ. রহমান",
-                initials: "এআর",
-                role: "প্রতিষ্ঠাতা ও মেডিকেল ডিরেক্টর",
-                desc: "জেরিয়াট্রিক ও ফ্যামিলি মেডিসিনে ১৫+ বছরের অভিজ্ঞতাসম্পন্ন কর্মরত চিকিৎসক। হাসপাতাল-পরবর্তী যত্ন ও বাসার জীবনের মধ্যে সেতু গড়তে Green Care Homes প্রতিষ্ঠা করেছেন।",
-                since: "প্রতিষ্ঠাতা সদস্য",
+                name: "ডা. মারুফ হোসেন",
+                role: "চেয়ারম্যান",
+                img: teamMarufImg,
               },
               {
-                name: "নার্স সুলতানা জাহান",
-                initials: "এসজে",
-                role: "হেড অফ নার্সিং অপারেশনস",
-                desc: "অস্ত্রোপচার-পরবর্তী ও প্যালিয়েটিভ কেয়ারে বিশেষজ্ঞ রেজিস্টার্ড নার্স। আমাদের নার্সিং প্রশিক্ষণ ও মান নিয়ন্ত্রণ প্রোটোকল গড়ে তুলেছেন ও পরিচালনা করছেন।",
-                since: "প্রতিষ্ঠাতা সদস্য",
+                name: "মো. কাজী আক্তার হোসেন ইমন",
+                role: "ডিরেক্টর",
+                img: teamEmonImg,
               },
               {
-                name: "রেজাউল করিম",
-                initials: "আরকে",
-                role: "কেয়ার ইকোসিস্টেম ডিরেক্টর",
-                desc: "হোম কেয়ার, রেসিডেন্স ও ফিজিওথেরাপি টিমের মধ্যে সমন্বয় ঘটান — যাতে প্রতিটি পরিবার একটি সংযুক্ত ও নির্বিঘ্ন কেয়ার প্ল্যানের অভিজ্ঞতা পায়।",
-                since: "প্রতিষ্ঠাতা সদস্য",
+                name: "মো. স্বপন ইসলাম",
+                role: "ডিরেক্টর",
+                img: teamSwaponImg,
               },
             ].map((person) => (
               <motion.div
                 key={person.name}
                 {...childFadeUp}
-                className="group rounded-3xl border border-border/40 bg-gradient-to-b from-white to-secondary/40 p-7 transition hover:-translate-y-1 hover:border-brand/20 hover:shadow-soft"
+                className="card-premium-dark group flex flex-col overflow-hidden p-0"
               >
-                <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[oklch(0.32_0.06_155)] via-[oklch(0.28_0.07_152)] to-[oklch(0.24_0.08_150)] text-cream text-base font-bold shadow-[0_12px_30px_-10px_rgba(20,60,30,0.35)]">
-                    {person.initials}
-                  </div>
-                  <div>
-                    <h3 className="text-base font-bold text-brand-deep">{person.name}</h3>
-                    <p className="text-xs tracking-wider text-muted-foreground">{person.role}</p>
-                  </div>
+                <div className="relative aspect-square w-full overflow-hidden">
+                  <div className="absolute inset-0 bg-brand/10 opacity-0 mix-blend-overlay transition-opacity duration-500 group-hover:opacity-100" />
+                  <img
+                    src={person.img}
+                    alt={person.name}
+                    className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[oklch(0.24_0.08_150)] via-[oklch(0.24_0.08_150)]/60 to-transparent opacity-100" />
                 </div>
-                <p className="mt-5 text-sm leading-[1.8] text-muted-foreground">{person.desc}</p>
-                <p className="mt-4 text-[11px] font-medium tracking-wider text-brand">{person.since}</p>
+                <div className="relative z-10 -mt-8 flex flex-col items-center pb-8 text-center px-6">
+                  <h3 className="text-xl font-bold text-cream">{person.name}</h3>
+                  <p className="mt-2 text-[11px] font-semibold tracking-wider text-brand">{person.role}</p>
+                </div>
               </motion.div>
             ))}
           </motion.div>
@@ -487,7 +509,7 @@ function AboutPage() {
         description="প্রিয়জনের জন্য যত্ন বেছে নেওয়ার সময় যে বিষয়গুলো সবচেয়ে গুরুত্বপূর্ণ — তার সৎ ও স্পষ্ট উত্তর।"
         items={faqs}
         image={faqCareImg}
-        imageAlt="Green Care Homes-এ রোগীর পাশে মমতাময়ী নার্স"
+        imageAlt="Greencare Homes-এ রোগীর পাশে মমতাময়ী নার্স"
         caption={"\u201Cআমরা সেই যত্ন দিই — যেমন যত্ন আমরা নিজেদের পরিবারের জন্য চাই।\u201D"}
         footerText="এখনো কোনো প্রশ্ন আছে?"
         footerLinkText="সরাসরি আমাদের জিজ্ঞেস করুন"
