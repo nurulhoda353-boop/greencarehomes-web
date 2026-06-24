@@ -431,7 +431,7 @@ function HomePage() {
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
               className="font-display text-[2.25rem] font-black leading-[1.04] tracking-[-0.04em] text-cream sm:text-[2.75rem] md:text-6xl lg:text-[5.25rem]"
             >
-              Your Trusted Care
+              Your Trusted Care 🌿
               <br />
               <span className="bg-gradient-to-r from-brand via-[oklch(0.82_0.18_140)] to-brand bg-clip-text font-light italic tracking-[-0.03em] text-transparent">
                 Starts Here.
