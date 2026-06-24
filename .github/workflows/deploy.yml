@@ -35,3 +35,5 @@ jobs:
         local-dir: .output/
         # Update server-dir to the specific folder path in your cPanel if needed (e.g. public_html/ or app/)
         server-dir: /
+        # We must override exclude because the action excludes node_modules by default, but Nitro places necessary production dependencies in .output/server/node_modules
+        exclude: '[]'
