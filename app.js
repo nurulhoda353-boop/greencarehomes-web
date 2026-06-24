@@ -1,9 +1,11 @@
 // cPanel Node.js Application Startup File - Configured for greencare-backend
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 try {
-  const envPath = path.resolve(process.cwd(), '.env');
+  const __dirname = path.dirname(fileURLToPath(import.meta.url));
+  const envPath = path.resolve(__dirname, '.env');
   if (fs.existsSync(envPath)) {
     const envConfig = fs.readFileSync(envPath, 'utf8');
     envConfig.split('\n').forEach(line => {
